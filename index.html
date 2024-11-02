@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <input type="text" class="display-screen" id="input" placeholder="0">
+        </div>
+
+        <div class="btns">
+            <div class="rows">
+                <button class="btn" id="cancel-button" onclick="backspace()">CE</button>
+                <button class="btn" onclick="fact()">x!</button>
+                <button class="btn" onclick="number('(')">(</button>
+                <button class="btn" onclick="number(')')">)</button>
+                <button class="btn" onclick="number('%')">%</button>
+                <button class="btn" onclick="allclear()">AC</button>
+            </div>
+            <div class="rows">
+                <button class="btn" onclick="sin()">sin</button>
+                <button class="btn" onclick="pi()">Pi</button>
+                <button class="btn" onclick="number('7')">7</button>
+                <button class="btn" onclick="number('8')">8</button>
+                <button class="btn" onclick="number('9')">9</button>
+                <button class="btn" onclick="number('/')">/</button>
+            </div>
+            <div class="rows">
+                <button class="btn" onclick="cos()">cos</button>
+                <button class="btn" onclick="log()">log</button>
+                <button class="btn" onclick="number('4')">4</button>
+                <button class="btn" onclick="number('5')">5</button>
+                <button class="btn" onclick="number('6')">6</button>
+                <button class="btn" onclick="number('*')">*</button>
+            </div>
+            <div class="rows">
+                <button class="btn" oncanplay="tan()">tan</button>
+                <button class="btn" onclick="sqrt()">&radic;</button>
+                <button class="btn" onclick="number('1')">1</button>
+                <button class="btn" onclick="number('2')">2</button>
+                <button class="btn" onclick="number('3')">3</button>
+                <button class="btn" onclick="number('-')">-</button>
+            </div>
+            <div class="rows">
+                <button class="btn" onclick="e()">e</button>
+                <button class="btn" onclick="pow()">x<sup>y</sup></button>
+                <button class="btn" onclick="number('0')">0</button>
+                <button class="btn" onclick="number('.')">.</button>
+                <button class="btn" id="equal" onclick="equal()">=</button>
+                <button class="btn" onclick="number('+')">+</button>
+            </div>
+            
+        </div>
+    </div>        
+
+
+    <script src="script.js"></script>
+</body>
+</html>
